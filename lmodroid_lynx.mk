@@ -6,17 +6,17 @@
 
 # Inherit some common Lineage stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/lynx/aosp_lynx.mk)
-$(call inherit-product, device/google/gs201/lineage_common.mk)
+$(call inherit-product, device/google/gs201/lmodroid_common.mk)
 $(call inherit-product, device/google/lynx/device-lineage.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 7a
-PRODUCT_NAME := lineage_lynx
+PRODUCT_NAME := lmodroid_lynx
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
